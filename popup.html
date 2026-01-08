@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { width: 250px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #1a1a1a; color: white; padding: 15px; }
+    .status { text-align: center; margin-bottom: 20px; }
+    .toggle-btn { background: #00ff88; color: #1a1a1a; border: none; padding: 10px 20px; border-radius: 20px; cursor: pointer; font-weight: bold; width: 100%; transition: 0.3s; }
+    .toggle-btn:hover { background: #00cc6a; transform: scale(1.05); }
+    /* Simple Animation */
+    .pulse { animation: pulse-animation 2s infinite; }
+    @keyframes pulse-animation {
+      0% { box-shadow: 0 0 0 0px rgba(0, 255, 136, 0.4); }
+      100% { box-shadow: 0 0 0 20px rgba(0, 255, 136, 0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="status">
+    <h2>TrackBlocker</h2>
+    <p id="vpn-status">VPN: Disconnected</p>
+  </div>
+  <button id="toggle" class="toggle-btn">Enable Protection</button>
+  <script src="popup.js"></script>
+</body>
+</html>
